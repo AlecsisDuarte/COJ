@@ -1,3 +1,24 @@
+
+/**
+ * Problem: 1318 - Abc
+ * 
+ * Description: You will be given three integers A, B and C. The numbers will not be given in that exact order, 
+ *  but we do know that A is less than B and B less than C. In order to make for a more pleasant viewing, we want 
+ *  to rearrange them in the given order.
+ * 
+ * Input: The first line contains three positive integers A, B and C, not necessarily in that order. All three 
+ *  numbers will be less than or equal to 100. The second line contains three uppercase letters 'A', 'B' and 
+ *  'C' (with no spaces between them) representing the desired order.
+ * 
+ * Output: Output the A, B and C in the desired order on a single line, separated by single spaces.
+ * 
+ * Sample:
+ *  Input:
+ *      1 5 3
+ *      ABC
+ *  Output:
+ *      1 3 5
+ */
 import java.util.Scanner;
 
 public class Abc {
