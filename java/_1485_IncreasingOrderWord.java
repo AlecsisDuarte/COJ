@@ -14,7 +14,7 @@
  */
 import java.util.Scanner;
 
-public class IncreasingOrderWord {
+public class _1485_IncreasingOrderWord {
     public static class TreeSort<T extends Comparable<T>> {
         class Node {
             T key;

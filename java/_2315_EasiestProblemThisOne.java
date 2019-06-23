@@ -48,7 +48,7 @@
  */
 import java.util.Scanner;
 
-public class EasiestProblemThisOne {
+public class _2315_EasiestProblemThisOne {
     public static void main(String[] args) {
         final Scanner scan = new Scanner(System.in);
         int num = 0;

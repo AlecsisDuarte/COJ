@@ -20,7 +20,7 @@
  */
 import java.util.Scanner;
 
-public class Abc {
+public class _1318_Abc {
     public static void main(String[] args) {
         final Scanner scan = new Scanner(System.in);
         final int firstNum = scan.nextInt();
