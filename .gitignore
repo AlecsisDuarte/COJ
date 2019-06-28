@@ -1,3 +1,6 @@
 test
 .vscode
 *.class
+
+#Java enviroment file
+.java-version
