@@ -49,9 +49,14 @@ public class _1676_LetUsHelpGeorge {
 
         short n = Short.parseShort(in.readLine());
         int c = 1;
+        
+        //Added memorization
+        long[] values = new long[10001];
+        values[0] = 1;
+
         while (n > 0) {
             out.write(String.format("Case %d:\n", c++));
-            out.write(String.format("n = %d, diamonds = %d\n", n, getDiamonds(n)));
+            out.write(String.format("n = %d, diamonds = %d\n", n, getDiamonds(n, values)));
             n = Short.parseShort(in.readLine());
         }
 
@@ -59,11 +64,12 @@ public class _1676_LetUsHelpGeorge {
         in.close();
     }
 
-    private static long getDiamonds(short n) {
-        long res = 1;
-        for (int i = 2; i <= n; i++) {
-            res += i*i;
+    private static long getDiamonds(short n, long[] values) {
+        if (values[n] == 0) {
+            for (int i = 1; i <= n; ++i) {
+                values[i] = values[n] += i * i;
+            }
         }
-        return res;
+        return values[n];
     }
 }
