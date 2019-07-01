@@ -69,15 +69,8 @@ public class _1688_Eazzzzzy {
         BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int c;
-        boolean isFirst = true;
 
         while ((c = Integer.parseInt(in.readLine())) != -1) {
-            if (isFirst) {
-                isFirst = false;
-            } else {
-                out.write("\n");
-            }
-
             switch (c) {
             case 1: // Triangle
                 triangle(Byte.parseByte(in.readLine()), out);
@@ -91,6 +84,8 @@ public class _1688_Eazzzzzy {
                 rectangle(Byte.parseByte(values[0]), Byte.parseByte(values[1]), out);
                 break;
             }
+            out.write("\n");
+            out.flush();
         }
 
         out.close();
@@ -98,32 +93,39 @@ public class _1688_Eazzzzzy {
     }
 
     private static void triangle(byte h, BufferedWriter out) throws IOException {
+        StringBuilder sb = new StringBuilder();
+
         int w = (h - 1) * 2 + 1;
         int middle = w / 2;
         char[] line = new char[w + 1];
-        line[middle] = '*';
-        line[line.length - 1] = '\n';
+        // line[middle] = '*';
         int side = 0;
 
         // Fill with spaces
         for (int i = 0; i < middle; i++) {
-            line[i] = ' ';
+            // line[i] = ' ';
+            sb.append(' ');
         }
+        sb.append('*');
         while (h-- > 0) {
-            line[middle + side] = line[middle - side] = '*';
-            out.write(new String(line));
-            side++;
+            out.write(sb.toString());
+            // line[middle + side] = line[middle - side] = '*';
+            // out.write(new String(line));
+            out.write('\n');
+            sb.append("**");
+            sb.deleteCharAt(0);
         }
     }
 
     private static void rectangle(byte w, byte h, BufferedWriter out) throws IOException {
-        char[] line = new char[w + 1];
-        line[line.length - 1] = '\n';
+        StringBuilder sb = new StringBuilder(w);
         while (--w >= 0) {
-            line[w] = '*';
+            sb.append('*')
         }
+        sb.append('\n');
+        String l = sb.toString();
         while (h-- > 0) {
-            out.write(new String(line));
+            out.write(l);
         }
     }
 
