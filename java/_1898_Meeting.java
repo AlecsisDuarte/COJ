@@ -3,13 +3,13 @@
  *
  * Description:
  *  Two cyclists are travelling on a long highway along the same line, but in
- *  opposite directions. The first biker moves at a constant speed of 10 <= A <= 25
- *  km/h. The second biker at a constant speed of 10 <= B <= 25 km/h.
- *  
- *  Knowing this information, and the initial distance in kms between the cyclists
- *  (0 <= D <= 10^9), can you determine the number of hours it takes the bikers to
- *  pass each other? For the calculations, you may consider the bikers as very small
- *  points on the plane.
+ *  opposite directions. The first biker moves at a constant speed of 10 <= A <=
+ * 25 km/h. The second biker at a constant speed of 10 <= B <= 25 km/h.
+ *
+ *  Knowing this information, and the initial distance in kms between the
+ * cyclists (0 <= D <= 10^9), can you determine the number of hours it takes the
+ * bikers to pass each other? For the calculations, you may consider the bikers
+ * as very small points on the plane.
  *
  * Input specification:
  *  The first line contains an integer number 1 <= N <= 10^3 denoting the number
@@ -18,8 +18,8 @@
  *
  * Output specification:
  *  You must print N lines. The i-th line contains the calculated hours for the
- *  i-th scenario given in the input, as a real number rounded up to four decimal
- *  places.
+ *  i-th scenario given in the input, as a real number rounded up to four
+ * decimal places.
  *
  * Sample input:
  *  4
@@ -35,7 +35,8 @@
  *  24.9750
  *
  * URL: http://coj.uci.cu/24h/problem.xhtml?pid=1898
- * NOTE: Throws Wrong Answer but in C () it runs alright
+ * NOTE: Throws Wrong Answer but in C
+ *  (https://github.com//AlecsisDuarte/COJ/blob/master/c/_1898_Meeting.c) runs just fine
  */
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
