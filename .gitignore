@@ -4,3 +4,6 @@ test
 
 #Java enviroment file
 .java-version
+
+#C compiled files
+*.out
