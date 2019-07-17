@@ -151,6 +151,10 @@ public class _1961_Roadblock {
     for (int i = 0; i < n; i++) {
       if (!sptSet[i] && dist[i] <= min) {
         min = dist[i];
+        //Targeted vertex
+        if (i == n-1) {
+          return i;
+        }
         index = i;
       }
     }
