@@ -22,6 +22,7 @@
  *  yes
  *
  * URL: http://coj.uci.cu/24h/problem.xhtml?pid=2146
+ * REF: http://mathforum.org/library/drmath/sets/select/dm_polygon_diagonals.html
  */
 import java.io.BufferedWriter;
 import java.io.IOException;
