@@ -70,7 +70,7 @@ public class _2948_LazyUnitSum {
   }
 
   static int getUnitSum(int a) {
-    if (a / 10 == 0) {
+    if (a < 10) {
       return a;
     }
     int sum = 0;
